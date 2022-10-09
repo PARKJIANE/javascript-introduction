@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>조건문5</title>
+</head>
+<body>
+    <script type="text/javascript">
+       /*if(true && true) {
+        alert(1);
+       }
+       if(true && false) {
+        alert(1);
+       }else{
+        alert(2);
+       }
+       if(false && false) {
+        alert(1);
+       }else{
+        alert(2);
+       }*/
+       
+       /*var id=prompt('아이디를 입력해주세요.');
+       var password=prompt('비밀번호를 입력해주세요.');
+       if(id==='egoing' && password == '1234') { // && = AND 양쪽 둘다 true 일때 true 논리연산자
+           alert('로그인 하셨습니다.'+id+'님 반갑습니다.')
+       } else {
+           alert('아이디가 일치하지 않습니다.');
+       }*/
+
+       var id=prompt('아이디를 입력해주세요.');
+       var password=prompt('비밀번호를 입력해주세요.');
+       if(id==='egoing' || id==='egoing1' || id==='egoing2' && password === '1234') { // || = OR 양쪽 하나만 true 일때 true 논리연산자
+           alert('로그인 하셨습니다.'+id+'님 반갑습니다.')
+       } else {
+           alert('아이디가 일치하지 않습니다.');
+       }
+    </script>
+</body>
+</html>
