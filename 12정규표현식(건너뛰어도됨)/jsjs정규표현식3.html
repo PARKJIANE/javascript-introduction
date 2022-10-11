@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>정규표현식3</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*var xi=/a/;
+        "Abcde".match(xi);*/
+
+        // i를 붙이면 대소문자 구분 없음
+        var xi=/a/i;
+        "Abcde".match(xi); // 결과 : ["A"]
+
+        // g를 붙이면 모든 결과를 리턴
+        var xg=/a/;
+        "abcdea".match(xg); // 결과 : ["a"]
+
+        var og=/a/g;
+        "abcdea".match(og); // 결과 : ["a", "a"]
+
+        //ig
+        var ig=/a/ig;
+        "AabcdAa".match(ig); // 결과 : ["A", "a", "A", "a"]
+
+        </script>
+</body>
+</html>

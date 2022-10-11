@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>함수와 콜백3</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var process = [
+    function(input){ return input + 10;}, //[0]  1+10
+    function(input){ return input * input;}, //[1] 11*11
+    function(input){ return input / 2;} //[2] 121/2  ...60.5
+    ];
+    var input = 1;
+    for(var i = 0; i < process.length; i++){
+    input = process[i](input);
+    }
+    alert(input);
+    </script>
+</body>
+</html>

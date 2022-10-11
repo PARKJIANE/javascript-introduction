@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>전역변수, 지역변수</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var vscope='global'; // 전역변수
+        function fscope() {
+            var vscope='local'; // 지역변수
+        }
+        fscope();
+        alert(vscope);
+    </script>
+</body>
+</html>

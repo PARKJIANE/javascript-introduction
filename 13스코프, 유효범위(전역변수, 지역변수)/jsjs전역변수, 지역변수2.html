@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>전역변수, 지역변수2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function a() {
+            var i=0; //var을 빼면 계속 로딩되다 퍼짐
+        }
+        for(var i=0; i<5; i++) {
+            a();
+            document.write(i);
+        }
+    </script>
+</body>
+</html>
